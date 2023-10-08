@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media screen and (max-width : 800px) {/* 스크린 크기가 800보다 작을때 */
+    div.con2{display: block;}
+}
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    unicode-range: U+0041-005A, U+0061-007A ;/* 영어 */
+}
+
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif KR', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+    /* unicode-range: U+AC00-D7A3; 한글 */
+}
+
+header{/* 제목은 산스 */
+    font-family: 'Noto Sans', 'Noto Sans KR';
+}
+
+.article{/* 본문은 세리프 */
+    font-family: 'Noto Serif', 'Noto Serif KR';
+    line-height: 1.6;
+    text-align: left;
+    font-size: 17px;
+
+}
+
+h1 {/* 제목 폰트 지정 */
+    /* border: green solid 1px; */
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+h1 a {/* 홈페이지 제목 */
+    /* 부모자식 관계는 스페이스 한칸 */
+    display: block;
+    /* 블록으로 만들어주기 */
+    width: 100%;
+    text-align: center;
+
+}
+
+a {/* 목차 및 다른 링크 전체 */
+    text-decoration: none;
+    color: black;
+}
+
+.con1 ul {
+    /* border: red 2px solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    white-space: normal;
+}
+
+.con1 ul li {
+    /* border: #000 solid 2px; */
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+    display: flex;
+    width: 239px;
+    flex-direction: column;
+}
+.con2{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* border: 1px black solid; */
+}
+.con2 ol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    white-space: normal;
+    border-right: 1px gray solid;
+    margin: 30px;
+    margin-right: 0px;
+    padding: 30px;
+    /* background-color: pink; */
+
+}
+
+.con2 ol li {
+    /* border: #000 solid 2px; */
+    color: #000;
+    text-align: left;
+    font-weight: 600;
+    font-size: larger;
+    display: flex;
+    /* width: 239px; */
+    flex-direction: column;
+
+}
+
+.memo{color: green;}
+
+div.article{
+    margin: 30PX;
+    margin-left: 0px;
+}
+h2{
+    margin-left: 50px;
+}
+    
+h3{
+    padding-left: 10px;
+    text-transform: capitalize;
+    margin-left: 70px;
+
+}
+h4{
+    padding-left: 20px;
+    text-transform: capitalize;
+    margin-left: 90px;
+}
+.article p{
+    margin-left: 100px;
+
+}
